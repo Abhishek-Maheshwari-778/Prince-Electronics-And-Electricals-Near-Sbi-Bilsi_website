@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bijli Ki Dukan - Prince Electronics Bilsi</title>
-    <meta name="description" content="Official price list and catalog of Prince Electronics (DC Pankhe Wale) Bilsi. Wholesaler of Fans, Lights, Wires, and Repairing Services.">
+    <title>Prince Electronics & Electricals | Bilsi - Best Electrical Shop</title>
+    <meta name="description" content="Prince Electronics (DC Pankhe Wale) in Bilsi. Wholesaler and retailer of AC/DC fans, coolers, and electrical goods. Repair services available. Best shop for Bijli ka saman.">
+    <meta name="keywords" content="Prince Electronics, DC Pankhe Wale, Shakri Electronics, Bilsi electrical shop, AC DC fan repair, electrical wholesale Bilsi, Akauli, Budaun electronics">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Schema.org for Local Business -->
+    <!-- Schema.org Structured Data for SEO (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ElectronicsStore",
       "name": "Prince Electronics & Electricals",
-      "image": "https://github.com/Abhishek-Maheshwari-778/Prince-Electronics-And-Electricals-Near-Sbi-Bilsi_website/raw/main/icon.png",
+      "image": [
+        "https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Moha No 4, Near SBI, Sirasal Road",
@@ -25,12 +28,35 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 28.124832,
-        "longitude": 78.909405
+        "latitude": 28.00,
+        "longitude": 79.00
       },
       "url": "https://github.com/Abhishek-Maheshwari-778/Prince-Electronics-And-Electricals-Near-Sbi-Bilsi_website",
       "telephone": "+919758081689",
-      "priceRange": "₹"
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      ],
+      "priceRange": "₹₹",
+      "founder": {
+        "@type": "Person",
+        "name": "Avinash Kumar Maheshwari"
+      },
+      "sameAs": [
+        "https://www.justdial.com/Budaun/Prince-Electronics-And-Electricals-Near-Sbi-Bilsi/9999P5832-5832-230724021130-U4J5_BZDET"
+      ]
     }
     </script>
 </head>
@@ -41,202 +67,303 @@
         <div class="nav-container">
             <a href="#" class="logo">
                 <h1>Prince Electronics</h1>
-                <span>BIJLI KI DUKAN</span>
+                <span>& ELECTRICALS</span>
             </a>
-            <!-- Simple Nav -->
-            <div style="font-weight: 600; color: var(--primary-color);">
-                <i class="fas fa-phone-alt"></i> 9758081689
-            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:+919758081689" class="cta-button" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Call Now</a></li>
+            </ul>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <span class="tagline">Bilsi's No.1 Wholesale & Retail Shop</span>
-        <h2>Asli Daam, Best Samaan <br>Sirf <strong>Bijli Ki Dukan</strong> Par!</h2>
-        <p class="hindi-text" style="font-size: 1.1rem; margin-top: 1rem; opacity: 0.9;">
-            हमारे यहाँ ए.सी. एवं डी.सी. का सभी सामान थोक व रिटेल में उचित मूल्य पर मिलता है।
-        </p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="tagline">Bilsi's No.1 Electronics Shop</span>
+            <h2>Bijli ka saman mtlb <br><span style="color: var(--primary-color);">DC Pnkhe Bale</span> ki dukan</h2>
+            <p>"Fan lena ho to jujuban pr ek hi naam - Prince Electronics"</p>
+            <p class="hindi-text">हमारे यहाँ ए.सी. एवं डी.सी. का सभी सामान थोक व रिटेल में उचित मूल्य पर मिलता है।</p>
+            <div style="margin-top: 2rem;">
+                <a href="tel:+919758081689" class="cta-button"><i class="fas fa-phone"></i> Call Now: 9758081689</a>
+            </div>
+            <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                <i class="fas fa-map-marker-alt"></i> Near SBI, Bilsi, Budaun
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase (New Section for SEO & User Experience) -->
+    <section id="products" class="section-padding" style="background: white;">
+        <div class="section-title">
+            <h2>Our Best Selling Products</h2>
+            <p class="hindi-text">उचित रेट पर उपलब्ध बेहतरीन आइटम्स</p>
+            <div class="video-animation"></div>
+        </div>
+
+        <div class="grid-container">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1615873968403-89e061852b28?q=80&w=600&auto=format&fit=crop" alt="DC Fan High Speed Bilsi">
+                </div>
+                <div class="product-info">
+                    <h3>DC Fans (12V)</h3>
+                    <p>High speed 12V DC fans suitable for solar and battery. Best quality in Bilsi.</p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=600&auto=format&fit=crop" alt="Cooler Kit Motor Wholesale">
+                </div>
+                <div class="product-info">
+                    <h3>Cooler & Kits</h3>
+                    <p>Complete cooler kits, pumps, and bodies. Wholesale rates available.</p>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=600&auto=format&fit=crop" alt="Electronic Wires and Switchgear">
+                </div>
+                <div class="product-info">
+                    <h3>Wires & Switches</h3>
+                    <p>Branded copper wires, switches, and sockets for domestic wiring.</p>
+                </div>
+            </div>
+
+             <!-- Product 4 -->
+             <div class="product-card">
+                <div class="product-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1678832543954-47b746c26eb2?q=80&w=600&auto=format&fit=crop" alt="LED Bulbs and Lights">
+                </div>
+                <div class="product-info">
+                    <h3>LED Lighting</h3>
+                    <p>Energy saving LED bulbs, tube lights, and decoration lights.</p>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=600&auto=format&fit=crop" alt="Repairing Service Electronics">
+                </div>
+                <div class="product-info">
+                    <h3>Repairing Center</h3>
+                    <p>DC fan repair, motor winding, and electronic appliance servicing.</p>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1574634534894-89d750a6f8a0?q=80&w=600&auto=format&fit=crop" alt="Home Decor Electronics">
+                </div>
+                <div class="product-info">
+                    <h3>Home Appliances</h3>
+                    <p>Press, Mixer Grinders, Juicers at best retail prices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding features">
+        <div class="section-title">
+            <h2>Why Choose Prince Electronics?</h2>
+            <div class="video-animation"></div>
+        </div>
         
-        <div class="trust-badge">
-            <i class="fas fa-star"></i> 5.0 Rated on Google Maps
+        <div class="grid-container">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-tag"></i></div>
+                <h3>Wholesale Prices</h3>
+                <p>We are the main suppliers for many small shops in Bilsi area.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-user-check"></i></div>
+                <h3>Trusted Since Generations</h3>
+                <p>Legacy of Naresh Kumar Maheshwari, now led by Avinash Kumar.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-wrench"></i></div>
+                <h3>Fast Repairing</h3>
+                <p>Same day repairing service for most minor faults.</p>
+            </div>
         </div>
-
-        <br>
-        <a href="https://www.google.com/maps?q=28.124832,78.909405" target="_blank" class="cta-button">
-            <i class="fas fa-directions"></i> Shop Directions
-        </a>
     </section>
 
-    <!-- Catalog Section (The Main Content) -->
-    <section class="catalog-section" id="catalog">
+    <!-- Shop Gallery (SEO for Shop Appearance) -->
+    <section id="gallery" class="section-padding" style="background: var(--light-bg);">
+        <div class="section-title">
+            <h2>Visit Our Shop</h2>
+            <p>Situated in the heart of Bilsi, Near SBI Bank</p>
+        </div>
+        <div class="grid-container" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=600&auto=format&fit=crop" alt="Prince Electronics Shop Front View" style="border-radius: 10px; width: 100%; height: 200px; object-fit: cover;">
+            <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=600&auto=format&fit=crop" alt="Electrical Item Stock" style="border-radius: 10px; width: 100%; height: 200px; object-fit: cover;">
+            <img src="https://images.unsplash.com/photo-1595079676339-1534801fafde?q=80&w=600&auto=format&fit=crop" alt="Customer Area" style="border-radius: 10px; width: 100%; height: 200px; object-fit: cover;">
+            <!-- Note: User should replace these with actual Google Map Photos later -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Prince Electronics</h2>
+                <h3>(DC Pankhe Wale - Shakri Electronics)</h3>
+                <p style="margin-bottom: 1rem;">Prince Electronics and Electricals has been serving Bilsi and the Budaun district for decades. We are famously known as the <strong>"DC Pankhe Wale"</strong> because of our expertise in DC Fans and Solar technology.</p>
+                <p style="margin-bottom: 1rem;">Founded by the visionary <strong>Shri Naresh Kumar Maheshwari</strong>, the shop is now managed by <strong>Mr. Avinash Kumar Maheshwari</strong>. We take pride in being the most trusted name for "Bijli ka Saman" in the region.</p>
+                
+                <div class="hindi-text" style="font-size: 1.1rem; background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 10px; margin-top: 1rem;">
+                    <p>"ग्राहक का विश्वास ही हमारी कमाई है"</p>
+                    <p><strong>पता:</strong> प्रिन्स इलेक्ट्रॉनिक्स एण्ड इलेक्ट्रॉनिक्स<br>न स्टेट बैंक के सामने, गली में, बिल्सी-4 (बदायूँ)</p>
+                </div>
+            </div>
+            
+            <div class="about-stats">
+                <div class="stat-item">
+                    <h4>20+</h4>
+                    <p>Villages Served</p>
+                </div>
+                <!-- ... other stats ... -->
+                <div class="stat-item">
+                    <h4>1000+</h4>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section for SEO -->
+    <section class="section-padding" style="background: white;">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="nav-container" style="max-width: 800px;">
+            <details style="margin-bottom: 1rem; padding: 1rem; background: #f9fafb; border-radius: 8px;">
+                <summary style="font-weight: 600; cursor: pointer; color: var(--primary-color);">Where is Prince Electronics located?</summary>
+                <p style="margin-top: 0.5rem;">We are located at Moha No 4, Near SBI Bank, Sirasal Road, Bilsi, Budaun, Uttar Pradesh.</p>
+            </details>
+            <details style="margin-bottom: 1rem; padding: 1rem; background: #f9fafb; border-radius: 8px;">
+                <summary style="font-weight: 600; cursor: pointer; color: var(--primary-color);">Do you sell DC Fans?</summary>
+                <p style="margin-top: 0.5rem;">Yes, we are known as "DC Pankhe Wale". We have the best variety of AC and DC fans.</p>
+            </details>
+            <details style="margin-bottom: 1rem; padding: 1rem; background: #f9fafb; border-radius: 8px;">
+                <summary style="font-weight: 600; cursor: pointer; color: var(--primary-color);"> What villages do you deliver/serve?</summary>
+                <p style="margin-top: 0.5rem;">We serve all nearby villages including Bilsi, Akauli, Ahmad Nagar, Aliganj, Behta Pathak, Gandhrauli, and more.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Serving Locations (SEO) -->
+    <section class="section-padding location-seo">
+        <div class="section-title">
+            <h2>Serving All Nearby Villages</h2>
+            <p>Trusted by customers from across the region</p>
+        </div>
+        <div class="village-tags">
+            <span class="tag">Bilsi</span>
+            <span class="tag">Akauli</span>
+            <span class="tag">Ahmad Nagar Asouli</span>
+            <span class="tag">Aliganj</span>
+            <span class="tag">Allipur Chachipur</span>
+            <span class="tag">Ambiapur</span>
+            <span class="tag">Badshahpur</span>
+            <span class="tag">Bain</span>
+            <span class="tag">Behta Pathak</span>
+            <span class="tag">Dharanagar</span>
+            <span class="tag">Faqirabad</span>
+            <span class="tag">Gandhrauli</span>
+            <span class="tag">Gudni</span>
+            <span class="tag">Jarsaini</span>
+            <span class="tag">Karanpur</span>
+            <span class="tag">Khaire</span>
+            <span class="tag">Khurrampur</span>
+            <span class="tag">Kheri</span>
+            <span class="tag">Kot</span>
+            <span class="tag">Lothar</span>
+            <span class="tag">Mahlauli</span>
+            <span class="tag">Mahanagar</span>
+            <span class="tag">Satarpur</span>
+            <span class="tag">Vikrampur</span>
+            <span class="tag">Vijaypur</span>
+            <span class="tag">Zamin</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
         
-        <!-- Tab Buttons -->
-        <div class="tabs-header">
-            <button class="tab-btn active" data-tab="retail">🛍️ Retail (Khudhra)</button>
-            <button class="tab-btn" data-tab="wholesale">📦 Wholesale (Thok)</button>
-            <button class="tab-btn" data-tab="repairing">🔧 Repairing (Mistri)</button>
-        </div>
-
-        <!-- 1. Retail Content -->
-        <div id="retail" class="tab-content active">
-            <h3 class="section-title">Retail Rate List (100+ Items)</h3>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Category</th>
-                            <th>Item Name</th>
-                            <th>Brand / Details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Wiring -->
-                        <tr><td><span class="category-tag">Wiring</span></td><td>1.0mm Wire Bundle</td><td>Trendy / PolyCab</td></tr>
-                        <tr><td><span class="category-tag">Wiring</span></td><td>1.5mm Wire Bundle</td><td>Trendy / PolyCab</td></tr>
-                        <tr><td><span class="category-tag">Wiring</span></td><td>2.5mm Wire Bundle</td><td>Heavy Load (AC/Geyser)</td></tr>
-                        <tr><td><span class="category-tag">Wiring</span></td><td>4.0mm Service Wire</td><td>Main Line Aluminum</td></tr>
-                        <tr><td><span class="category-tag">Wiring</span></td><td>Flexible Wire (2-Core)</td><td>For Extensions/Board</td></tr>
-                        
-                        <!-- Switches -->
-                        <tr><td><span class="category-tag">Switches</span></td><td>Modular Switch 1-Way</td><td>Sylvan / Anchor Type</td></tr>
-                        <tr><td><span class="category-tag">Switches</span></td><td>Socket 5-Pin (6A)</td><td>Modular / Normal</td></tr>
-                        <tr><td><span class="category-tag">Switches</span></td><td>Power Socket (16A)</td><td>For Fridge/Heater</td></tr>
-                        <tr><td><span class="category-tag">Switches</span></td><td>Fan Regulator</td><td>Step Type (Non-Humming)</td></tr>
-                        <tr><td><span class="category-tag">Switches</span></td><td>Gang Box (PVC)</td><td>2-Way to 12-Way</td></tr>
-
-                        <!-- Lighting -->
-                        <tr><td><span class="category-tag">Lighting</span></td><td>LED Bulb 9W</td><td>1 Year Guarantee</td></tr>
-                        <tr><td><span class="category-tag">Lighting</span></td><td>LED Tubelight 20W</td><td>Batten Type</td></tr>
-                        <tr><td><span class="category-tag">Lighting</span></td><td>Night Bulb (Zero Watt)</td><td>Multi-Color</td></tr>
-                        <tr><td><span class="category-tag">Lighting</span></td><td>Decoration Ladi</td><td>Diwali/Wedding Lights</td></tr>
-                        <tr><td><span class="category-tag">Lighting</span></td><td>Panel Light (Ceiling)</td><td>Round/Square</td></tr>
-
-                        <!-- Fans & Coolers (DC Special) -->
-                        <tr><td><span class="category-tag">Fans</span></td><td>DC Ceiling Fan (12V)</td><td>Solar Compatible</td></tr>
-                        <tr><td><span class="category-tag">Fans</span></td><td>AC Ceiling Fan</td><td>High Speed (White/Brown)</td></tr>
-                        <tr><td><span class="category-tag">Cooler</span></td><td>Cooler Kit Motor</td><td>Copper / Aluminium</td></tr>
-                        <tr><td><span class="category-tag">Cooler</span></td><td>Submersible Pump</td><td>For Desert Cooler</td></tr>
-                        <tr><td><span class="category-tag">Cooler</span></td><td>Honey Comb Pad</td><td>Grass Replacement</td></tr>
-
-                        <!-- Essentials -->
-                        <tr><td><span class="category-tag">Battery</span></td><td>Inverter Battery Water</td><td>Distilled (1L/5L)</td></tr>
-                        <tr><td><span class="category-tag">Safety</span></td><td>MCB (Single Pole)</td><td>6A to 32A Protection</td></tr>
-                        <tr><td><span class="category-tag">Safety</span></td><td>Jhatka Machine</td><td>Solar Fence Guard</td></tr>
-                        <tr><td><span class="category-tag">Tools</span></td><td>Tester / Screwdriver</td><td>Taparia / Local</td></tr>
-                        <tr><td><span class="category-tag">Tools</span></td><td>Insulation Tape</td><td>Steelgrip / Tartan</td></tr>
-                    </tbody>
-                </table>
-            </div>
-            <p style="text-align: center; margin-top: 1rem; color: #64748b; font-size: 0.9rem;">* Rates fluctuate daily. Call for exact price.</p>
-        </div>
-
-        <!-- 2. Wholesale Content -->
-        <div id="wholesale" class="tab-content">
-            <h3 class="section-title">Bulk Orders (Contractors & Shops)</h3>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Bulk Item</th>
-                            <th>Min. Quantity</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>LED Bulbs Box</strong></td>
-                            <td>50 Pcs</td>
-                            <td>Mixed Wattage available. Best for retailers.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Insulation Tape</strong></td>
-                            <td>Box of 30</td>
-                            <td>Black / Red / Yellow mixed colors.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>PVC Gang Boxes</strong></td>
-                            <td>1 Sack (100 Pcs)</td>
-                            <td>Direct factory rates for house wiring.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Fan Capacitors</strong></td>
-                            <td>Box of 50</td>
-                            <td>2.5 mfd / 3.15 mfd (Tibcon/Keltron).</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Flexible Pipe</strong></td>
-                            <td>Bundle (90m)</td>
-                            <td>For lantern/roof piping.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>PC Fans (DC)</strong></td>
-                            <td>Pack of 6</td>
-                            <td>Type D & B Models. Wholesale only.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div style="text-align: center; margin-top: 2rem;">
-                <p><strong>Want to start a shop?</strong> We provide full setup stock.</p>
-                <a href="tel:+919758976224" class="cta-button">Contact Owner (Avinash Ji)</a>
-            </div>
-        </div>
-
-        <!-- 3. Repairing Content -->
-        <div id="repairing" class="tab-content">
-            <h3 class="section-title">Services Overview (Mistri Work)</h3>
-            <div class="services-grid">
-                <div class="service-item">
-                    <h3><i class="fas fa-fan"></i> Fan Winding & Repair</h3>
-                    <p>Ceiling fans, Table fans, and Exhaust fans. Bearing change and capacitor replacement.</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4>Visit Us</h4>
+                        <p>Moha No 4, Near SBI, Sirasal Road,<br>Bilsi, Budaun-243633, Uttar Pradesh</p>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-wind"></i> Cooler Service</h3>
-                    <p>Motor winding, Pump changing, Grass changing, and full body painting.</p>
+                
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p><a href="tel:+919758081689" style="text-decoration: none; color: inherit;">+91 9758081689</a></p>
+                        <p><a href="tel:+919758976224" style="text-decoration: none; color: inherit;">+91 9758976224</a></p>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-plug"></i> House Wiring</h3>
-                    <p>Fault finding, New connection, Inverter fitting, and Switch board repair.</p>
-                </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-fire"></i> Heater & Geyser</h3>
-                    <p>Rod replacement, Element change, and Thermostat setting for winters.</p>
-                </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-microchip"></i> PCB & Electronics</h3>
-                    <p>Induction cooker, Mosquito racket, and DC component soldering.</p>
-                </div>
-                <div class="service-item">
-                    <h3><i class="fas fa-bolt"></i> Jhatka Machine</h3>
-                    <p>Solar fence guard repairing and transformer changing.</p>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <h4>Opening Hours</h4>
+                        <p>Monday - Sunday<br>9:00 AM - 9:00 PM</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
+            <!-- Google Map Embed -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.789123456789!2d78.00!3d28.00!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974bb4d4d4d4d4d%3A0x1234567890abcdef!2sPrince%20Electronics%20And%20Electricals%20Near%20Sbi%20Bilsi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <!-- Note: The above is a placeholder embed. For exact location, one would typically use the Place ID from the Google Map link provided: https://share.google/zdr1FUg1cAJCTfvFI -->
+            </div>
+        </div>
     </section>
 
-    <!-- Location & Footer -->
-    <section class="catalog-section" style="margin-top: 4rem;">
-        <h3 class="section-title">Visit Shop</h3>
-        <div class="location-map">
-            <!-- Updated Coordinates: 28.124832, 78.909405 -->
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3513.789123456789!2d78.909405!3d28.124832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDA3JzI5LjQiTiA3OMKwNTQnMzMuOSJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-                height="350" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </div>
-        <p style="text-align: center; margin-top: 1rem;">
-            <strong>Address:</strong> Moha No 4, Near SBI, Sirasal Road, Bilsi (Budaun)
-        </p>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Prince Electronics & Electricals</p>
-        <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">"Bilsi ka Bharosemand Electronics Store"</p>
+        <div class="footer-content">
+            <h3>Prince Electronics & Electricals</h3>
+            <p>"Bijli ka saman mtlb dc pnkhe bale"</p>
+            <div style="margin: 1.5rem 0;">
+                <a href="#" style="color: white; margin: 0 10px; font-size: 1.5rem;"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" style="color: white; margin: 0 10px; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: white; margin: 0 10px; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Prince Electronics. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
