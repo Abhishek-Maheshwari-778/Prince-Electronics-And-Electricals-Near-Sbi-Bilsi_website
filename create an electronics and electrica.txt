@@ -1,0 +1,54 @@
+create an electronics and electricals shop website 
+have retail, wholsale and repairing services...
+ok basic info = [shop names famous with the defferent names = dc pnkhe bale 
+price pikhe bale
+prince electronics
+shakri electorics
+dc pnke bale ka besbaas..
+bilsi Bijli ki dukaan...
+and 5 more..
+add best tags lines(like Bijli ka saman mtlb dc pnkhe bale ki duka, , fan lena ho to jujuban pr ek hi naam , ..) with names and do more creative things...
+electrician shop website that for now runs and host in versel or GitHub pages ..like free lifetime hostings... 
+and do all things more perfectly and easy ,lightbate Indian hindi,english,hinglish
+kyo ki user base bhut hai like 500 people ometings ... log search krenge ...]
+links = https://www.justdial.com/Budaun/Prince-Electronics-And-Electricals-Near-Sbi-Bilsi/9999P5832-5832-230724021130-U4J5_BZDET
+google map link= https://share.google/zdr1FUg1cAJCTfvFI
+Prince Electronics And Electricals
+Moha 4, Moha No 4, Near SBI, Sirasal Road, Bilsi, Budaun-243633, Uttar Pradesh
+
+make better search engine optimization in or at any cost it will show first....
+in google. alo add map in google.. for location..
+
+Many villages surround Bilsi in the Budaun district of Uttar Pradesh, including Akauli, Ahmad Nagar Asouli, Aliganj, Allipur Chachipur, Ambiapur, Badshahpur, Bain, Behta Pathak, Dharanagar, Faqirabad, Gandhrauli, Gudni, Jarsaini, Karanpur, Khaire, Khurrampur, Kheri, Kot, Lothar, Mahlauli, Mahanagar, Satarpur, Vikrampur, Vijaypur, Zamin
+
+ye log 70 % dc pnkhe bale se or prince electronics 20% shakri electronics 10% naam se famous hai ...
+create website for Indian odians ok villagers local peoples .
+
+shop persons info= 
+9758081689
+9758976224
+प्रिन्स इलेक्ट्रॉनिक्स एण्ड इलेक्ट्रॉनिक्स
+owner's father = नरेश कुमार माहेश्वरी
+Main owner = अविनाश कुमार माहेश्वरी
+हमारे यहाँ ए.सी. एवं डी.सी. का सभी सामान थोक व रिटेल में उचित मूल्य पर मिलता है।
+स्टेट बैंक के सामने, गली में, बिल्सी-4 (बदायूँ)
+हमारे यहाँ ए.सी. एवं डी.सी. का सभी सामान थोक व रिटेल में उचित मूल्य पर मिलता है।
+डी.सी. फैन डी.सी. कूलर के थोक विक्रेता
+
+[Quick setup — if you’ve done this kind of thing before
+or	
+https://github.com/Abhishek-Maheshwari-778/Prince-Electronics-And-Electricals-Near-Sbi-Bilsi_website.git
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+
+…or create a new repository on the command line
+echo "# Prince-Electronics-And-Electricals-Near-Sbi-Bilsi_website" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Abhishek-Maheshwari-778/Prince-Electronics-And-Electricals-Near-Sbi-Bilsi_website.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/Abhishek-Maheshwari-778/Prince-Electronics-And-Electricals-Near-Sbi-Bilsi_website.git
+git branch -M main
+git push -u origin main]
