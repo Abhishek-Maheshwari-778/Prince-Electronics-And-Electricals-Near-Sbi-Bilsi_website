@@ -8,9 +8,11 @@ Welcome to the official website project for **Prince Electronics & Electricals (
 - `script.js`: Handles interactions like the mobile menu.
 
 ## Features
+- **Hybrid V4 Design**: Combines beautiful product cards with a detailed 100+ item rate list.
+- **Tabbed Catalog**: switching between Retail, Wholesale, and Repairing lists.
 - **Bilingual Content**: Supports English and Hindi/Hinglish as requested.
 - **Mobile Responsive**: Looks great on all phones and desktops.
-- **SEO Optimized**: Includes tags for Bilsi and surrounding villages.
+- **SEO Optimized**: Includes tags for Bilsi and surrounding villages, plus Schema.org data.
 - **Contact Integrated**: One-click calling and Google Maps integration.
 
 ## How to Edit
