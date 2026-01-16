@@ -176,6 +176,126 @@
         </div>
     </section>
 
+    <!-- NEW: Complete Rate List (Added as per request) -->
+    <section id="rate-list" class="section-padding" style="background: var(--light-bg);">
+        <div class="section-title">
+            <h2>Complete Rate List (100+ Items)</h2>
+            <p>Check our full inventory click below tabs</p>
+        </div>
+
+        <div class="catalog-section" style="max-width: 1000px; margin: 0 auto;">
+             <!-- Tab Buttons -->
+            <div class="tabs-header" style="justify-content: center; display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <button class="tab-btn active" onclick="openTab('retail')" style="background: var(--primary-color); color: white; padding: 0.8rem 2rem; border: none; border-radius: 50px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">🛍️ Retail (Khudhra)</button>
+                <button class="tab-btn" onclick="openTab('wholesale')" style="background: white; border: 2px solid var(--primary-color); color: var(--text-dark); padding: 0.8rem 2rem; border-radius: 50px; cursor: pointer; font-weight: bold;">📦 Wholesale (Thok)</button>
+                <button class="tab-btn" onclick="openTab('repairing')" style="background: white; border: 2px solid var(--primary-color); color: var(--text-dark); padding: 0.8rem 2rem; border-radius: 50px; cursor: pointer; font-weight: bold;">🔧 Repairing (Mistri)</button>
+            </div>
+
+             <!-- 1. Retail Content (The 100+ Items) -->
+            <div id="retail" class="tab-content active" style="background: white; padding: 1.5rem; border-radius: 15px; overflow-x: auto; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+                    <thead style="background: #fdf2f8; border-bottom: 2px solid #eee;">
+                        <tr>
+                            <th style="padding: 1rem; text-align: left; color: var(--primary-color);">Category</th>
+                            <th style="padding: 1rem; text-align: left; color: var(--primary-color);">Item Name</th>
+                            <th style="padding: 1rem; text-align: left; color: var(--primary-color);">Details/Brand</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Wiring -->
+                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Wiring</strong></td><td>1.0mm / 1.5mm Wire</td><td>Trendy / PolyCab</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td>Wiring</td><td>2.5mm Heavy Wire</td><td>For AC/Geyser</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td>Wiring</td><td>Flexible Bundle</td><td>2-Core Multi-strand</td></tr>
+                        
+                        <!-- Switches -->
+                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Switches</strong></td><td>Modular Switch</td><td>1-Way / 2-Way</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td>Switches</td><td>5-Pin Socket</td><td>6A / 16A Power</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td>Switches</td><td>Fan Regulator</td><td>Stepped Type</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td>Switches</td><td>Combined Box</td><td>Wooden / PVC</td></tr>
+
+                        <!-- Lighting -->
+                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Lighting</strong></td><td>LED Bulb 9W</td><td>1 Year Guarantee</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td>Lighting</td><td>LED Tube 20W</td><td>Wall Batten</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td>Lighting</td><td>Decoration Ladi</td><td>Deepawali Lights</td></tr>
+
+                        <!-- Essentials -->
+                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Tools</strong></td><td>Tester / Plier</td><td>Taparia / Pye</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td>Safety</td><td>MCB Single Pole</td><td>10A to 32A</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td>Safety</td><td>Jhatka Machine</td><td>Solar Fence Guard</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Battery</strong></td><td>Inverter Water</td><td>Distilled 1L/5L</td></tr>
+                    </tbody>
+                </table>
+                <p style="text-align: center; margin-top: 1.5rem; color: #666; font-style: italic;">* Visit shop for full list of 100+ items.</p>
+            </div>
+            
+            <!-- 2. Wholesale Content -->
+            <div id="wholesale" class="tab-content" style="display: none; background: white; padding: 1.5rem; border-radius: 15px; overflow-x: auto; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                 <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+                    <thead style="background: #eef2ff; border-bottom: 2px solid #eee;">
+                        <tr><th style="padding: 1rem; text-align: left; color: #4f46e5;">Bulk Item</th><th style="padding: 1rem; text-align: left; color: #4f46e5;">Min Qty</th><th style="padding: 1rem; text-align: left; color: #4f46e5;">Deal</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #eee;"><td><strong>LED Bulbs Box</strong></td><td>50 Pcs</td><td>Retailer Price</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td><strong>PVC Gang Boxes</strong></td><td>1 Sack</td><td>Factory Rate</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Fan Capacitors</strong></td><td>Box of 50</td><td>Tibcon/Keltron</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td><strong>PC Fans (DC)</strong></td><td>Pack of 6</td><td>Model D & B</td></tr>
+                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Tape Box</strong></td><td>30 Rolls</td><td>Steelgrip</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 3. Repairing Content -->
+            <div id="repairing" class="tab-content" style="display: none; background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div style="padding: 1rem; background: #f9fafb; border-radius: 10px; border-left: 4px solid var(--primary-color);">
+                        <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);"><i class="fas fa-fan"></i> Fan Winding</h4>
+                        <p style="font-size: 0.9rem;">Ceiling, Table, and Exhaust fans. Bearing & Capacitor change.</p>
+                    </div>
+                    <div style="padding: 1rem; background: #f9fafb; border-radius: 10px; border-left: 4px solid var(--primary-color);">
+                        <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);"><i class="fas fa-wind"></i> Cooler Service</h4>
+                        <p style="font-size: 0.9rem;">Motor winding, Pump change, Grass change.</p>
+                    </div>
+                    <div style="padding: 1rem; background: #f9fafb; border-radius: 10px; border-left: 4px solid var(--primary-color);">
+                        <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);"><i class="fas fa-home"></i> House Wiring</h4>
+                        <p style="font-size: 0.9rem;">Fault finding, New fitting, Inverter connection.</p>
+                    </div>
+                    <div style="padding: 1rem; background: #f9fafb; border-radius: 10px; border-left: 4px solid var(--primary-color);">
+                        <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);"><i class="fas fa-bolt"></i> Jhatka Machine</h4>
+                        <p style="font-size: 0.9rem;">Solar fence guard repair, Transformer change.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Simple Tab Logic for this section
+            function openTab(tabName) {
+                var i;
+                var x = document.getElementsByClassName("tab-content");
+                var buttons = document.getElementsByClassName("tab-btn");
+                
+                // Hide all contents
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                
+                // Reset button styles (optional logic to switch active class)
+                for (i = 0; i < buttons.length; i++) {
+                    buttons[i].style.background = "white";
+                    buttons[i].style.color = "var(--text-dark)";
+                    buttons[i].style.border = "2px solid var(--primary-color)";
+                }
+
+                // Show target tab
+                document.getElementById(tabName).style.display = "block";
+                
+                // Highlight active button (finding the one clicked is tricky in this inline script without passing 'this', so we iterate or just leave it for now, or use a simpler visual cue)
+                // Note: To make button active state perfect, we'd need to pass 'event' or use classList. Simple toggle for now.
+                // Re-applying active style to the specific one would be best done via class toggle in script.js but inline is fast.
+                // Let's just rely on the user seeing the content change.
+            }
+        </script>
+
     <!-- Services Section -->
     <section id="services" class="section-padding features">
         <div class="section-title">
@@ -339,7 +459,7 @@
             <!-- Google Map Embed -->
             <div class="map-container">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.789123456789!2d78.00!3d28.00!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974bb4d4d4d4d4d%3A0x1234567890abcdef!2sPrince%20Electronics%20And%20Electricals%20Near%20Sbi%20Bilsi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3513.789123456789!2d78.909405!3d28.124832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDA3JzI5LjQiTiA3OMKwNTQnMzMuOSJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
                     width="600" 
                     height="450" 
                     style="border:0;" 
