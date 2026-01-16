@@ -292,11 +292,17 @@
                 // Show target tab
                 document.getElementById(tabName).style.display = "block";
                 
-                // Highlight active button (finding the one clicked is tricky in this inline script without passing 'this', so we iterate or just leave it for now, or use a simpler visual cue)
-                // Note: To make button active state perfect, we'd need to pass 'event' or use classList. Simple toggle for now.
-                // Re-applying active style to the specific one would be best done via class toggle in script.js but inline is fast.
-                // Let's just rely on the user seeing the content change.
+                // Highlight active button
+                // We find the button that called this function by checking text content or attribute matching
+                // Simpler approach: verify which button matches the tabName
+                for (i = 0; i < buttons.length; i++) {
+                     if(buttons[i].getAttribute('onclick').includes(tabName)) {
+                         buttons[i].style.background = "var(--primary-color)";
+                         buttons[i].style.color = "white";
+                     }
+                }
             }
+
         </script>
 
     <!-- Services Section -->
