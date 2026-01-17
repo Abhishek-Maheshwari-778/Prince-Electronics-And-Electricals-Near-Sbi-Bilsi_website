@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prince Electronics & Electricals | Bilsi - Best Electrical Shop</title>
-    <meta name="description" content="Prince Electronics (DC Pankhe Wale) in Bilsi. Wholesaler and retailer of AC/DC fans, coolers, and electrical goods. Repair services available. Best shop for Bijli ka saman.">
-    <meta name="keywords" content="Prince Electronics, DC Pankhe Wale, Shakri Electronics, Bilsi electrical shop, AC DC fan repair, electrical wholesale Bilsi, Akauli, Budaun electronics">
+    <title>Prince Electronics & Electricals - Bilsi | DC Fans, Solar & Repair</title>
+    <meta name="description" content="Prince Electronics Bilsi - Authorized dealer of DC Fans, Solar Panels, Cooler Kits, and Electrical Goods. Expert Repairing Services. Located near SBI Bank, Bilsi.">
+    <meta name="keywords" content="Prince Electronics, Bilsi Electronics, DC Fan Bilsi, Solar Panel Bilsi, Electrical Shop Bilsi, Cooler Motor Repair, Prince Electronics Location">
+    <meta name="author" content="Abhishek Maheshwari">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Prince Electronics - Best Electrical Shop in Bilsi">
+    <meta property="og:description" content="Buy High Speed DC Fans, Cooler Kits, and get expert repairing services at Prince Electronics, Bilsi.">
+    <meta property="og:image" content="shop_photos/Screenshot 2026-01-17 221424.png">
+    <meta property="og:url" content="https://prince-electronics-bilsi.github.io">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="dc_fan_solar_12v_1768666858684.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Schema.org Structured Data for SEO (JSON-LD) -->
@@ -114,7 +125,7 @@
             <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1615873968403-89e061852b28?q=80&w=600&auto=format&fit=crop" alt="DC Fan High Speed Bilsi">
+                    <img src="dc_fan_solar_12v_1768666858684.png" alt="DC Fan High Speed Bilsi">
                 </div>
                 <div class="product-info">
                     <h3>DC Fans (12V)</h3>
@@ -125,7 +136,7 @@
             <!-- Product 2 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=600&auto=format&fit=crop" alt="Cooler Kit Motor Wholesale">
+                    <img src="cooler_motor_kit_pump_1768666874627.png" alt="Cooler Kit Motor Wholesale">
                 </div>
                 <div class="product-info">
                     <h3>Cooler & Kits</h3>
@@ -136,7 +147,7 @@
             <!-- Product 3 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=600&auto=format&fit=crop" alt="Electronic Wires and Switchgear">
+                    <img src="electrical_wires_switches_board_1768666890254.png" alt="Electronic Wires and Switchgear">
                 </div>
                 <div class="product-info">
                     <h3>Wires & Switches</h3>
@@ -147,7 +158,7 @@
              <!-- Product 4 -->
              <div class="product-card">
                 <div class="product-image">
-                    <img src="https://plus.unsplash.com/premium_photo-1678832543954-47b746c26eb2?q=80&w=600&auto=format&fit=crop" alt="LED Bulbs and Lights">
+                    <img src="led_lighting_bulb_1768666934428.png" alt="LED Bulbs and Lights">
                 </div>
                 <div class="product-info">
                     <h3>LED Lighting</h3>
@@ -158,7 +169,7 @@
             <!-- Product 5 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=600&auto=format&fit=crop" alt="Repairing Service Electronics">
+                    <img src="repairing_center_tools_1768666917606.png" alt="Repairing Service Electronics">
                 </div>
                 <div class="product-info">
                     <h3>Repairing Center</h3>
@@ -169,7 +180,7 @@
             <!-- Product 6 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1574634534894-89d750a6f8a0?q=80&w=600&auto=format&fit=crop" alt="Home Decor Electronics">
+                    <img src="home_appliances_iron_mixer_v2_1768667008970.png" alt="Home Decor Electronics">
                 </div>
                 <div class="product-info">
                     <h3>Home Appliances</h3>
@@ -183,10 +194,18 @@
     <section id="rate-list" class="section-padding" style="background: var(--light-bg);">
         <div class="section-title">
             <h2>Complete Rate List (100+ Items)</h2>
-            <p>Check our full inventory click below tabs</p>
+            <p>Search or click tabs to view full inventory</p>
         </div>
 
         <div class="catalog-section" style="max-width: 1000px; margin: 0 auto;">
+            
+            <!-- Search Bar -->
+            <div class="search-container" style="max-width: 500px; margin: 0 auto 2rem auto; position: relative;">
+                <input type="text" id="inventorySearch" placeholder="Search for wires, switches, fans..." onkeyup="filterInventory()" 
+                style="width: 100%; padding: 1rem 1.5rem; border-radius: 50px; border: 2px solid var(--primary-color); font-size: 1rem; outline: none; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                <i class="fas fa-search" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: var(--primary-color);"></i>
+            </div>
+
              <!-- Tab Buttons -->
             <div class="tabs-header" style="justify-content: center; display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
                 <button class="tab-btn active" onclick="openTab('retail')" style="background: var(--primary-color); color: white; padding: 0.8rem 2rem; border: none; border-radius: 50px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">🛍️ Retail (Khudhra)</button>
@@ -195,115 +214,346 @@
             </div>
 
              <!-- 1. Retail Content (The 100+ Items) -->
-            <div id="retail" class="tab-content active" style="background: white; padding: 1.5rem; border-radius: 15px; overflow-x: auto; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
-                    <thead style="background: #fdf2f8; border-bottom: 2px solid #eee;">
-                        <tr>
-                            <th style="padding: 1rem; text-align: left; color: var(--primary-color);">Category</th>
-                            <th style="padding: 1rem; text-align: left; color: var(--primary-color);">Item Name</th>
-                            <th style="padding: 1rem; text-align: left; color: var(--primary-color);">Details/Brand</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Wiring -->
-                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Wiring</strong></td><td>1.0mm / 1.5mm Wire</td><td>Trendy / PolyCab</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td>Wiring</td><td>2.5mm Heavy Wire</td><td>For AC/Geyser</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td>Wiring</td><td>Flexible Bundle</td><td>2-Core Multi-strand</td></tr>
-                        
-                        <!-- Switches -->
-                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Switches</strong></td><td>Modular Switch</td><td>1-Way / 2-Way</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td>Switches</td><td>5-Pin Socket</td><td>6A / 16A Power</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td>Switches</td><td>Fan Regulator</td><td>Stepped Type</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td>Switches</td><td>Combined Box</td><td>Wooden / PVC</td></tr>
+            <div id="retail" class="tab-content active" style="background: white; padding: 1.5rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                
+                <!-- Category 1: House Wiring -->
+                <details open class="category-group">
+                    <summary>🏠 House Wiring & Cables</summary>
+                    <div class="table-responsive">
+                        <table class="inventory-table">
+                            <thead><tr><th>Item Name</th><th>Details</th><th>Brand/Source</th></tr></thead>
+                            <tbody>
+                                <tr><td>1.0mm Wire</td><td>Multistrand, 90m Coil</td><td><span class="brand-badge">Trendy</span> <span class="brand-badge">B-RV</span></td></tr>
+                                <tr><td>1.5mm Wire</td><td>Multistrand, 90m Coil</td><td><span class="brand-badge">Polyflex</span> <span class="brand-badge">Standard</span></td></tr>
+                                <tr><td>2.5mm Wire</td><td>Heavy Duty for AC/Power</td><td><span class="brand-badge">Trendy</span> <span class="brand-badge">Havells</span></td></tr>
+                                <tr><td>4.0mm Wire</td><td>Main Line Service Wire</td><td><span class="brand-badge">PolyCab</span></td></tr>
+                                <tr><td>Submersible Cable</td><td>3-Core Flat Cable</td><td><span class="brand-badge">Finolex Type</span></td></tr>
+                                <tr><td>Coaxial Cable</td><td>Dish TV Wire (Black/White)</td><td>Standard</td></tr>
+                                <tr><td>Telephone Wire</td><td>2-Pair / 4-Pair</td><td>Supplied</td></tr>
+                                <tr><td>Flexible Loop Wire</td><td>2-Core Multi-strand (Bundle)</td><td><span class="brand-badge">B-RV</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
 
-                        <!-- Lighting -->
-                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Lighting</strong></td><td>LED Bulb 9W</td><td>1 Year Guarantee</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td>Lighting</td><td>LED Tube 20W</td><td>Wall Batten</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td>Lighting</td><td>Decoration Ladi</td><td>Deepawali Lights</td></tr>
+                <!-- Category 2: Switches -->
+                <details class="category-group">
+                    <summary>🔌 Switches & Modular Boards</summary>
+                    <div class="table-responsive">
+                       <table class="inventory-table">
+                            <thead><tr><th>Item Name</th><th>Details</th><th>Brand/Source</th></tr></thead>
+                            <tbody>
+                                <tr><td>Modular Switch 1-Way</td><td>10A / 20A Polycarbonate</td><td><span class="brand-badge">Genius Platinum</span> <span class="brand-badge">Star</span></td></tr>
+                                <tr><td>Modular Switch 2-Way</td><td>Staircase usage</td><td><span class="brand-badge">Goldmedal</span></td></tr>
+                                <tr><td>5-Pin Socket</td><td>6A / 16A Shuttered</td><td><span class="brand-badge">Anchor Type</span></td></tr>
+                                <tr><td>Fan Regulator</td><td>4-Step / 5-Step Heavy</td><td><span class="brand-badge">Nawab</span></td></tr>
+                                <tr><td>Combined Box</td><td>Power box with switch+socket</td><td>Wooden / PVC</td></tr>
+                                <tr><td>Modular Plates</td><td>2M, 4M, 6M, 8M, 12M, 18M</td><td><span class="brand-badge">Topson</span> <span class="brand-badge">Saqura</span></td></tr>
+                                <tr><td>Surface Gang Box</td><td>PVC Open Fitting</td><td>Heavy Quality</td></tr>
+                                <tr><td>Indicator Switch</td><td>With Neon Lamp</td><td><span class="brand-badge">Genius</span></td></tr>
+                                <tr><td>Bell Push Switch</td><td>Modular / Piano</td><td><span class="brand-badge">Cona Type</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
 
-                        <!-- Essentials -->
-                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Tools</strong></td><td>Tester / Plier</td><td>Taparia / Pye</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td>Safety</td><td>MCB Single Pole</td><td>10A to 32A</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td>Safety</td><td>Jhatka Machine</td><td>Solar Fence Guard</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Battery</strong></td><td>Inverter Water</td><td>Distilled 1L/5L</td></tr>
-                    </tbody>
-                </table>
-                <p style="text-align: center; margin-top: 1.5rem; color: #666; font-style: italic;">* Visit shop for full list of 100+ items.</p>
+                <!-- Category 3: Lighting -->
+                <details class="category-group">
+                    <summary>💡 Lighting & Illumination</summary>
+                    <div class="table-responsive">
+                       <table class="inventory-table">
+                            <thead><tr><th>Item Name</th><th>Details</th><th>Brand/Source</th></tr></thead>
+                            <tbody>
+                                <tr><td>LED Bulb 9W</td><td>Cool Day Light, 1 Yr Warranty</td><td><span class="brand-badge">Prakash Lites</span> <span class="brand-badge">Guru</span></td></tr>
+                                <tr><td>LED Bulb 12W/15W</td><td>Higher Wattage</td><td><span class="brand-badge">Bhole</span> <span class="brand-badge">Clair</span></td></tr>
+                                <tr><td>Night Lamp</td><td>0.5W Multi-color/Blue</td><td><span class="brand-badge">Milap</span></td></tr>
+                                <tr><td>LED Batten (Tube)</td><td>20W / 24W Wall Mount</td><td><span class="brand-badge">Prakash</span></td></tr>
+                                <tr><td>Decoration Ladi</td><td>Deepawali Series/Pixel</td><td>Indian / China</td></tr>
+                                <tr><td>LED Strike</td><td>Profile Light Strips</td><td>Run w/ Adapter</td></tr>
+                                <tr><td>CFL Bulb</td><td>Retrofit Spiral 25W</td><td>Old Stock</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+
+                 <!-- Category 4: Safety & MCB -->
+                <details class="category-group">
+                    <summary>🛡️ Circuit Protection (Safety)</summary>
+                    <div class="table-responsive">
+                       <table class="inventory-table">
+                            <thead><tr><th>Item Name</th><th>Details</th><th>Brand/Source</th></tr></thead>
+                            <tbody>
+                                <tr><td>MCB Single Pole</td><td>6A to 32A C-Curve</td><td><span class="brand-badge">Cervo</span> <span class="brand-badge">Havells</span></td></tr>
+                                <tr><td>Isolator / DP</td><td>40A Double Pole Switch</td><td><span class="brand-badge">Bhole</span> <span class="brand-badge">Plexo</span></td></tr>
+                                <tr><td>Changeover Switch</td><td>Automatic / Manual (Generator)</td><td><span class="brand-badge">Bentex Type</span></td></tr>
+                                <tr><td>Kit-Kat Fuse</td><td>Porcelain Re-wirable</td><td>Old Style</td></tr>
+                                <tr><td>Distribution Box</td><td>MCB Box (Plastic/Metal)</td><td><span class="brand-badge">Gold</span></td></tr>
+                                <tr><td>Busbar</td><td>For heavy distribution</td><td>Copper</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+
+                <!-- Category 5: Heating -->
+                <details class="category-group">
+                    <summary>🔥 Heating & Seasonal</summary>
+                    <div class="table-responsive">
+                       <table class="inventory-table">
+                            <thead><tr><th>Item Name</th><th>Details</th><th>Brand/Source</th></tr></thead>
+                            <tbody>
+                                <tr><td>Immersion Rod</td><td>1000W / 1500W Water Heater</td><td><span class="brand-badge">RR Appliances</span> <span class="brand-badge">Nova Hot</span></td></tr>
+                                <tr><td>Room Heater</td><td>Quartz (2 Rod) / Heat Pillar</td><td><span class="brand-badge">Priya</span> <span class="brand-badge">Bentek</span></td></tr>
+                                <tr><td>Geyser Element</td><td>2kW, 3kW Triangular/Round</td><td>Spare Part</td></tr>
+                                <tr><td>LPG Heater Element</td><td>Ceramic Plate</td><td>Spare Part</td></tr>
+                                <tr><td>Heater Spring</td><td>Nichrome Wire</td><td>Maintenance</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+
+                <!-- Category 6: Cooling Spares -->
+                 <details class="category-group">
+                    <summary>❄️ Cooler, Fan & AC Spares</summary>
+                    <div class="table-responsive">
+                       <table class="inventory-table">
+                            <thead><tr><th>Item Name</th><th>Details</th><th>Brand/Source</th></tr></thead>
+                            <tbody>
+                                <tr><td>Cooler Pump</td><td>Submersible (18W) / Tullu</td><td><span class="brand-badge">Kool-King</span></td></tr>
+                                <tr><td>Fan Capacitor</td><td>2.5, 3.15, 4.0 MFD</td><td><span class="brand-badge">Tibcon</span> <span class="brand-badge">Keltron</span></td></tr>
+                                <tr><td>Cooler Motor</td><td>110V / Copper Winding</td><td>Kit only</td></tr>
+                                <tr><td>Fan Blade</td><td>High Speed / Low Speed</td><td>Aluminium</td></tr>
+                                <tr><td>Fan Rod</td><td>Downrod (Various sizes)</td><td>Powder Coated</td></tr>
+                                <tr><td>Canopy/Cap</td><td>Top & Bottom Set</td><td>PVC</td></tr>
+                                <tr><td>Bearing</td><td>6201, 6202 z/zz</td><td><span class="brand-badge">SKF</span> <span class="brand-badge">NBC</span></td></tr>
+                                <tr><td>Rubber Bush</td><td>Fan Hanging Bush</td><td>Hard Rubber</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+
+                <!-- Category 7: Hobby -->
+                <details class="category-group">
+                    <summary>🔋 Student Projects & Batteries</summary>
+                    <div class="table-responsive">
+                       <table class="inventory-table">
+                            <thead><tr><th>Item Name</th><th>Details</th><th>Brand/Source</th></tr></thead>
+                            <tbody>
+                                <tr><td>DC Motor</td><td>Toy Motor (Round/Flat)</td><td>Project</td></tr>
+                                <tr><td>Gear Motor</td><td>BO Motor + Wheel</td><td>Robotics</td></tr>
+                                <tr><td>Batteries</td><td>AA / AAA Alkaline / 9V</td><td><span class="brand-badge">Duracell</span> <span class="brand-badge">Nippo</span></td></tr>
+                                <tr><td>Battery Clip</td><td>9V HW Connector</td><td>Snap-on</td></tr>
+                                <tr><td>PC Fan</td><td>12V DC Cooling Fan</td><td>Type D / Type B</td></tr>
+                                <tr><td>Switch (Mini)</td><td>SPST Rocker Switch</td><td>Project</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+
+                <!-- Category 8: Hardware -->
+                <details class="category-group">
+                    <summary>🔩 Installation Hardware</summary>
+                    <div class="table-responsive">
+                       <table class="inventory-table">
+                            <thead><tr><th>Item Name</th><th>Details</th><th>Brand/Source</th></tr></thead>
+                            <tbody>
+                                <tr><td>Batten Holder</td><td>Angle / Straight (Brass Pin)</td><td><span class="brand-badge">Goldmedal</span></td></tr>
+                                <tr><td>Ceiling Rose</td><td>2-Plate / 3-Plate</td><td><span class="brand-badge">Shree-G</span></td></tr>
+                                <tr><td>3-Pin Top</td><td>6A / 16A Plug Top</td><td><span class="brand-badge">Rajdool</span></td></tr>
+                                <tr><td>Multi-Plug</td><td>Universal Adaptor</td><td><span class="brand-badge">Oak</span></td></tr>
+                                <tr><td>Tape</td><td>PVC Insulation (Steelgrip)</td><td><span class="brand-badge">Parkash</span></td></tr>
+                                <tr><td>Saddles/Clips</td><td>For pipe fitting (20mm/25mm)</td><td>Packets</td></tr>
+                                <tr><td>Rawl Plug (Gitti)</td><td>Nylon / Plastic</td><td>Packet</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+
+                <!-- Category 9: Tools -->
+                <details class="category-group">
+                    <summary>🛠️ Tools & Instruments</summary>
+                    <div class="table-responsive">
+                       <table class="inventory-table">
+                            <thead><tr><th>Item Name</th><th>Details</th><th>Brand/Source</th></tr></thead>
+                            <tbody>
+                                <tr><td>Plier (Plash)</td><td>Combination 8-inch</td><td><span class="brand-badge">Taparia</span></td></tr>
+                                <tr><td>Wire Cutter</td><td>6-inch Forged</td><td><span class="brand-badge">Pye</span></td></tr>
+                                <tr><td>Tester</td><td>Neon Line Tester (500V)</td><td><span class="brand-badge">Taparia</span></td></tr>
+                                <tr><td>Screwdriver</td><td>2-in-1 Reversible</td><td><span class="brand-badge">Akari</span></td></tr>
+                                <tr><td>Soldering Iron</td><td>25W / Soldering Wire</td><td><span class="brand-badge">Bhole</span></td></tr>
+                                <tr><td>Multimeter</td><td>Digital DT-830D</td><td>Yellow</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+
+                 <!-- Category 10: Misc -->
+                 <details class="category-group">
+                    <summary>🚜 Machinery & Misc.</summary>
+                    <div class="table-responsive">
+                       <table class="inventory-table">
+                            <thead><tr><th>Item Name</th><th>Details</th><th>Brand/Source</th></tr></thead>
+                            <tbody>
+                                <tr><td>Jhatka Machine</td><td>Solar Fence Guard</td><td>Recorded in Log</td></tr>
+                                <tr><td>Battery Water</td><td>Distilled (1L / 5L)</td><td>Local</td></tr>
+                                <tr><td>Extension Cord</td><td>Surge Protector / Strip</td><td><span class="brand-badge">GM Type</span></td></tr>
+                                <tr><td>Bed Switch</td><td>Hanging Switch</td><td><span class="brand-badge">Prince</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+
+                <p style="text-align: center; margin-top: 2rem; color: #666; font-style: italic;">* Stocks updated weekly. Visit Bilsi shop for live demonstration.</p>
             </div>
             
             <!-- 2. Wholesale Content -->
-            <div id="wholesale" class="tab-content" style="display: none; background: white; padding: 1.5rem; border-radius: 15px; overflow-x: auto; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                 <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
-                    <thead style="background: #eef2ff; border-bottom: 2px solid #eee;">
-                        <tr><th style="padding: 1rem; text-align: left; color: #4f46e5;">Bulk Item</th><th style="padding: 1rem; text-align: left; color: #4f46e5;">Min Qty</th><th style="padding: 1rem; text-align: left; color: #4f46e5;">Deal</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-bottom: 1px solid #eee;"><td><strong>LED Bulbs Box</strong></td><td>50 Pcs</td><td>Retailer Price</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td><strong>PVC Gang Boxes</strong></td><td>1 Sack</td><td>Factory Rate</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Fan Capacitors</strong></td><td>Box of 50</td><td>Tibcon/Keltron</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td><strong>PC Fans (DC)</strong></td><td>Pack of 6</td><td>Model D & B</td></tr>
-                        <tr style="border-bottom: 1px solid #eee;"><td><strong>Tape Box</strong></td><td>30 Rolls</td><td>Steelgrip</td></tr>
-                    </tbody>
-                </table>
+            <div id="wholesale" class="tab-content" style="display: none; background: white; padding: 1.5rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                 <div class="table-responsive">
+                     <table class="inventory-table">
+                        <thead style="background: #eef2ff; border-bottom: 2px solid #eee;">
+                            <tr><th style="color: #4f46e5;">Bulk Item</th><th style="color: #4f46e5;">Packing Unit</th><th style="color: #4f46e5;">Notes</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>LED Bulbs (Carton)</strong></td><td>50 / 100 Pcs</td><td>Mixed Wattage allowed</td></tr>
+                            <tr><td><strong>Gang Boxes (Sack)</strong></td><td>Sack of 100</td><td>Mixed sizes (1-way to 12-way)</td></tr>
+                            <tr><td><strong>Fan Capacitors</strong></td><td>Box of 50</td><td>Tibcon / Keltron Master Box</td></tr>
+                            <tr><td><strong>PC Fans 12V</strong></td><td>Pack of 6</td><td>Models D & B (High RPM)</td></tr>
+                            <tr><td><strong>Insulation Pipe</strong></td><td>Bundle of 25</td><td>PVC Heavy Casing</td></tr>
+                            <tr><td><strong>Tape Box</strong></td><td>30 Rolls</td><td>Steelgrip / Local Grade</td></tr>
+                            <tr><td><strong>Flexible Wire</strong></td><td>90m Coils</td><td>Bundle Rates apply</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="margin-top: 1.5rem; padding: 1rem; background: #e0e7ff; border-radius: 8px; color: #3730a3;">
+                    <i class="fas fa-info-circle"></i> <strong>Note for Contractors:</strong> Special rates for full house wiring projects in Bilsi area.
+                </div>
             </div>
 
             <!-- 3. Repairing Content -->
             <div id="repairing" class="tab-content" style="display: none; background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-                    <div style="padding: 1rem; background: #f9fafb; border-radius: 10px; border-left: 4px solid var(--primary-color);">
-                        <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);"><i class="fas fa-fan"></i> Fan Winding</h4>
-                        <p style="font-size: 0.9rem;">Ceiling, Table, and Exhaust fans. Bearing & Capacitor change.</p>
+                    <!-- S1 -->
+                    <div class="service-card">
+                        <h4><i class="fas fa-fan"></i> Fan Repair</h4>
+                        <p>Ceiling, Table, Exhaust. Winding, Bearing & Capacitor change.</p>
                     </div>
-                    <div style="padding: 1rem; background: #f9fafb; border-radius: 10px; border-left: 4px solid var(--primary-color);">
-                        <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);"><i class="fas fa-wind"></i> Cooler Service</h4>
-                        <p style="font-size: 0.9rem;">Motor winding, Pump change, Grass change.</p>
+                    <!-- S2 -->
+                    <div class="service-card">
+                        <h4><i class="fas fa-wind"></i> Cooler Service</h4>
+                        <p>Complete overhauling: Motor winding, Pump change, Grass change.</p>
                     </div>
-                    <div style="padding: 1rem; background: #f9fafb; border-radius: 10px; border-left: 4px solid var(--primary-color);">
-                        <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);"><i class="fas fa-home"></i> House Wiring</h4>
-                        <p style="font-size: 0.9rem;">Fault finding, New fitting, Inverter connection.</p>
+                    <!-- S3 -->
+                    <div class="service-card">
+                        <h4><i class="fas fa-bolt"></i> Motor Winding</h4>
+                        <p>Copper winding for Tullu pumps and washing machine motors.</p>
                     </div>
-                    <div style="padding: 1rem; background: #f9fafb; border-radius: 10px; border-left: 4px solid var(--primary-color);">
-                        <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);"><i class="fas fa-bolt"></i> Jhatka Machine</h4>
-                        <p style="font-size: 0.9rem;">Solar fence guard repair, Transformer change.</p>
+                    <!-- S4 -->
+                    <div class="service-card">
+                        <h4><i class="fas fa-fire"></i> Heater & Geyser</h4>
+                        <p>Element replacement, Thermostat setting, Rod fixing.</p>
+                    </div>
+                    <!-- S5 -->
+                    <div class="service-card">
+                        <h4><i class="fas fa-plug"></i> Switch Boards</h4>
+                        <p>New fitting, Fault finding, burning smell check, socket change.</p>
+                    </div>
+                    <!-- S6 -->
+                    <div class="service-card">
+                        <h4><i class="fas fa-solar-panel"></i> Jhatka Machine</h4>
+                        <p>Solar fence guard repair, Transformer voltage fix.</p>
+                    </div>
+                     <!-- S7 -->
+                     <div class="service-card">
+                        <h4><i class="fas fa-tshirt"></i> Iron/Press</h4>
+                        <p>Automatic iron element and wire change.</p>
+                    </div>
+                     <!-- S8 -->
+                     <div class="service-card">
+                        <h4><i class="fas fa-tools"></i> Power Tools</h4>
+                        <p>Drill machine carbon brush and switch repair.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <script>
-            // Simple Tab Logic for this section
+            // Tab Logic
             function openTab(tabName) {
                 var i;
                 var x = document.getElementsByClassName("tab-content");
                 var buttons = document.getElementsByClassName("tab-btn");
-                
-                // Hide all contents
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                }
-                
-                // Reset button styles (optional logic to switch active class)
+                for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
                 for (i = 0; i < buttons.length; i++) {
                     buttons[i].style.background = "white";
                     buttons[i].style.color = "var(--text-dark)";
                     buttons[i].style.border = "2px solid var(--primary-color)";
+                    buttons[i].classList.remove("active");
                 }
-
-                // Show target tab
                 document.getElementById(tabName).style.display = "block";
-                
-                // Highlight active button
-                // We find the button that called this function by checking text content or attribute matching
-                // Simpler approach: verify which button matches the tabName
                 for (i = 0; i < buttons.length; i++) {
                      if(buttons[i].getAttribute('onclick').includes(tabName)) {
                          buttons[i].style.background = "var(--primary-color)";
                          buttons[i].style.color = "white";
+                         buttons[i].classList.add("active");
                      }
                 }
             }
 
+            // Search Logic
+            function filterInventory() {
+                var input, filter, details, tr, td, i, j, txtValue, match;
+                input = document.getElementById("inventorySearch");
+                filter = input.value.toUpperCase();
+                
+                // Get within the active tab (Retail primarily)
+                var container = document.getElementById("retail");
+                var categories = container.getElementsByTagName("details");
+
+                for (i = 0; i < categories.length; i++) {
+                    var table = categories[i].querySelector("table");
+                    tr = table.getElementsByTagName("tr");
+                    var categoryHasMatch = false;
+
+                    for (j = 0; j < tr.length; j++) {
+                        // Skip header
+                        if (tr[j].getElementsByTagName("th").length > 0) continue;
+
+                        td = tr[j].getElementsByTagName("td");
+                        match = false;
+                         // Check Item Name (0) and Details (1) columns
+                        if (td[0] || td[1]) {
+                            var txt1 = td[0].textContent || td[0].innerText;
+                            var txt2 = td[1].textContent || td[1].innerText;
+                            if (txt1.toUpperCase().indexOf(filter) > -1 || txt2.toUpperCase().indexOf(filter) > -1) {
+                                match = true;
+                                categoryHasMatch = true;
+                            }
+                        }
+                        
+                        if (match) {
+                            tr[j].style.display = "";
+                        } else {
+                            tr[j].style.display = "none";
+                        }
+                    }
+
+                    // Open category if it has matches, otherwise leave as is (or close? maybe better to leave open)
+                    // If filter is empty, show all
+                    if(filter === "") {
+                         categories[i].open = false; // Collapse all by default on clear
+                    } else if (categoryHasMatch) {
+                        categories[i].open = true;
+                        categories[i].style.display = "block";
+                    } else {
+                         categories[i].style.display = "none"; // Hide empty categories
+                    }
+                     if(filter === "") {
+                        categories[i].style.display = "block";
+                        categories[i].open = true; // Restore defaults
+                     }
+                }
+            }
         </script>
+
 
     <!-- Services Section -->
     <section id="services" class="section-padding features">
@@ -337,11 +587,10 @@
             <h2>Visit Our Shop</h2>
             <p>Situated in the heart of Bilsi, Near SBI Bank</p>
         </div>
-        <div class="grid-container" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=600&auto=format&fit=crop" alt="Prince Electronics Shop Front View" style="border-radius: 10px; width: 100%; height: 200px; object-fit: cover;">
-            <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=600&auto=format&fit=crop" alt="Electrical Item Stock" style="border-radius: 10px; width: 100%; height: 200px; object-fit: cover;">
-            <img src="https://images.unsplash.com/photo-1595079676339-1534801fafde?q=80&w=600&auto=format&fit=crop" alt="Customer Area" style="border-radius: 10px; width: 100%; height: 200px; object-fit: cover;">
-            <!-- Note: User should replace these with actual Google Map Photos later -->
+        <div class="grid-container" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <img src="shop_photos/Screenshot 2026-01-17 221424.png" alt="Prince Electronics Shop Front View" style="border-radius: 12px; width: 100%; height: 250px; object-fit: cover; border: 4px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <img src="shop_photos/Screenshot 2026-01-17 221516.png" alt="Counter Area" style="border-radius: 12px; width: 100%; height: 250px; object-fit: cover; border: 4px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <img src="shop_photos/Screenshot 2026-01-17 221703.png" alt="Stock Display" style="border-radius: 12px; width: 100%; height: 250px; object-fit: cover; border: 4px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
         </div>
     </section>
 
@@ -378,56 +627,21 @@
     <section class="section-padding" style="background: white;">
         <div class="section-title">
             <h2>Frequently Asked Questions</h2>
+            <div class="video-animation"></div>
         </div>
-        <div class="nav-container" style="max-width: 800px;">
-            <details style="margin-bottom: 1rem; padding: 1rem; background: #f9fafb; border-radius: 8px;">
-                <summary style="font-weight: 600; cursor: pointer; color: var(--primary-color);">Where is Prince Electronics located?</summary>
-                <p style="margin-top: 0.5rem;">We are located at Moha No 4, Near SBI Bank, Sirasal Road, Bilsi, Budaun, Uttar Pradesh.</p>
+        <div class="faq-container">
+            <details class="faq-item">
+                <summary>Where is Prince Electronics located?</summary>
+                <p>We are conveniently located at <strong>Moha No 4, Near SBI Bank, Sirasal Road, Bilsi</strong>, Budaun. Look for the "Prince Electronics" board near the bank.</p>
             </details>
-            <details style="margin-bottom: 1rem; padding: 1rem; background: #f9fafb; border-radius: 8px;">
-                <summary style="font-weight: 600; cursor: pointer; color: var(--primary-color);">Do you sell DC Fans?</summary>
-                <p style="margin-top: 0.5rem;">Yes, we are known as "DC Pankhe Wale". We have the best variety of AC and DC fans.</p>
+            <details class="faq-item">
+                <summary>Do you sell DC Fans and Solar Items?</summary>
+                <p>Yes! We are famously known as <strong>"DC Pankhe Wale"</strong> (The DC Fan Shop). We stock high-speed 12V DC fans, solar panels, and solar-compatible cooler kits. We are the authorized dealers for many premium brands.</p>
             </details>
-            <details style="margin-bottom: 1rem; padding: 1rem; background: #f9fafb; border-radius: 8px;">
-                <summary style="font-weight: 600; cursor: pointer; color: var(--primary-color);"> What villages do you deliver/serve?</summary>
-                <p style="margin-top: 0.5rem;">We serve all nearby villages including Bilsi, Akauli, Ahmad Nagar, Aliganj, Behta Pathak, Gandhrauli, and more.</p>
+            <details class="faq-item">
+                <summary>What villages do you serve?</summary>
+                <p>We serve customers from across the Budaun district, including specialized delivery/service to: <em>Bilsi, Akauli, Ahmad Nagar Asouli, Aliganj, Allipur Chachipur, Ambiapur, Badshahpur, Bain, Behta Pathak, Dharanagar, Faqirabad, Gandhrauli, Gudni, Jarsaini, Karanpur, Khaire, Khurrampur, Kheri, Kot, Lothar, Mahlauli, Mahanagar, Satarpur, Vikrampur, Vijaypur, and Zamin.</em></p>
             </details>
-        </div>
-    </section>
-
-    <!-- Serving Locations (SEO) -->
-    <section class="section-padding location-seo">
-        <div class="section-title">
-            <h2>Serving All Nearby Villages</h2>
-            <p>Trusted by customers from across the region</p>
-        </div>
-        <div class="village-tags">
-            <span class="tag">Bilsi</span>
-            <span class="tag">Akauli</span>
-            <span class="tag">Ahmad Nagar Asouli</span>
-            <span class="tag">Aliganj</span>
-            <span class="tag">Allipur Chachipur</span>
-            <span class="tag">Ambiapur</span>
-            <span class="tag">Badshahpur</span>
-            <span class="tag">Bain</span>
-            <span class="tag">Behta Pathak</span>
-            <span class="tag">Dharanagar</span>
-            <span class="tag">Faqirabad</span>
-            <span class="tag">Gandhrauli</span>
-            <span class="tag">Gudni</span>
-            <span class="tag">Jarsaini</span>
-            <span class="tag">Karanpur</span>
-            <span class="tag">Khaire</span>
-            <span class="tag">Khurrampur</span>
-            <span class="tag">Kheri</span>
-            <span class="tag">Kot</span>
-            <span class="tag">Lothar</span>
-            <span class="tag">Mahlauli</span>
-            <span class="tag">Mahanagar</span>
-            <span class="tag">Satarpur</span>
-            <span class="tag">Vikrampur</span>
-            <span class="tag">Vijaypur</span>
-            <span class="tag">Zamin</span>
         </div>
     </section>
 

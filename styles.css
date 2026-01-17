@@ -488,10 +488,17 @@ footer p {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
 }
+
 /* =========================================
    NEW ADDITIONS: Catalog Tables & Tabs 
    (Integrated into V2 Orange/Blue Theme)
    ========================================= */
+
+/* Search Bar */
+.search-container input:focus {
+    border-color: var(--secondary-color) !important;
+    box-shadow: 0 4px 15px rgba(0, 78, 146, 0.2) !important;
+}
 
 /* Tab Navigation */
 .catalog-section {
@@ -536,62 +543,388 @@ footer p {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Accordion / Details Styles */
+details.category-group {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+details.category-group[open] {
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border-color: var(--primary-color);
+}
+
+summary {
+    padding: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--secondary-color);
+    background: #fdf2f8;
+    /* Light Pink/Orange tint */
+    list-style: none;
+    /* Hide default arrow in some browsers */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: transform 0.3s;
+}
+
+details[open] summary::after {
+    transform: rotate(45deg);
+}
+
+/* Brand Badges */
+.brand-badge {
+    display: inline-block;
+    background: #e0e7ff;
+    /* Indigo-100 */
+    color: #3730a3;
+    /* Indigo-800 */
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 4px;
+    margin-bottom: 2px;
 }
 
 /* Data Tables */
-table {
+.inventory-table {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
+    border-collapse: collapse;
     background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
 }
 
-thead {
-    background: #fff7ed; /* Light Orange Tint */
+.inventory-table thead {
+    background: #fff7ed;
 }
 
-th {
+.inventory-table th {
     padding: 1rem;
     text-align: left;
     font-weight: 700;
     color: var(--secondary-color);
-    text-transform: uppercase;
     font-size: 0.85rem;
-    border-bottom: 2px solid #ffe4e6;
+    border-bottom: 2px solid #fed7aa;
 }
 
-td {
+.inventory-table td {
     padding: 1rem;
     border-bottom: 1px solid #f3f4f6;
     color: var(--text-dark);
     font-size: 0.95rem;
 }
 
-tr:hover td {
+.inventory-table tr:hover td {
     background-color: #fcfafa;
 }
 
-/* Repairing Grid */
-.service-grid-tab {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+/* Service Cards (Grid) */
+.service-card {
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 12px;
+    border-left: 5px solid var(--primary-color);
+    transition: transform 0.3s;
 }
 
-/* Mobile Adjustments for Tables */
-@media (max-width: 600px) {
-    .tab-btn {
-        padding: 0.6rem 1.2rem;
+.service-card:hover {
+    transform: translateY(-5px);
+    background: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h4 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* =========================================
+   MOBILE OPTIMIZATION (Cards View)
+   ========================================= */
+@media (max-width: 768px) {
+
+    /* Prevent horizontal overflow */
+    body,
+    html {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Fix Header/Logo overlap */
+    .nav-container {
+        padding: 0.8rem 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.3rem;
+        /* Smaller font to fit next to hamburger */
+    }
+
+    .logo span {
+        font-size: 0.7rem;
+    }
+
+    /* Fix Hero Text Overflow */
+    .hero {
+        margin-top: 60px;
+        /* Reduced top margin matching header */
+        padding: 2rem 1rem;
+        min-height: auto;
+        /* Allow flexible height */
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+        /* Significantly smaller than 3.5rem */
+        line-height: 1.2;
+        word-wrap: break-word;
+        /* Prevent text spilling out */
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    /* Existing Navigation adjustments */
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        /* Match new header height if needed */
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        align-items: center;
+        gap: 1.5rem;
+        transition: var(--transition);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        margin-left: auto;
+        /* Ensure it pushes to the right */
+    }
+
+    .section-padding {
+        padding: 3rem 1rem;
+        /* Better side padding for mobile */
+    }
+
+    /* Search Bar Font Fix */
+    .search-container input {
+        font-size: 16px;
+        /* Prevents iOS Zoom */
+    }
+
+    /* Mobile Table to Card Transformation */
+    .inventory-table,
+    .inventory-table tbody,
+    .inventory-table tr,
+    .inventory-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .inventory-table thead {
+        display: none;
+        /* Hide headers on mobile */
+    }
+
+    .inventory-table tr {
+        margin-bottom: 1.2rem;
+        /* More space between cards */
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 1.2rem;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        /* Softer shadow */
+        position: relative;
+    }
+
+    .inventory-table td {
+        padding: 0.4rem 0;
+        border: none;
+        display: block;
+        /* Ensure vertically stacked */
+        text-align: left;
+        font-size: 0.95rem;
+    }
+
+    .inventory-table td::before {
+        /* Remove float layout for cleaner look */
+        content: attr(data-label);
+        display: none;
+    }
+
+    /* Specific styling for our 3 columns */
+    .inventory-table td:first-child {
+        font-family: 'Teko', sans-serif;
+        /* Stylish Header */
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+        color: var(--primary-color);
+        border-bottom: 1px solid #f3f4f6;
+        margin-bottom: 0.8rem;
+        padding-bottom: 0.5rem;
+        line-height: 1.2;
+    }
+
+    .inventory-table td:nth-child(2) {
+        color: #4b5563;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+
+    .inventory-table td:nth-child(3) {
+        color: #6b7280;
         font-size: 0.9rem;
+        background: #f9fafb;
+        padding: 0.5rem;
+        border-radius: 6px;
+        display: inline-block;
+        /* Behave like a tag container */
+        width: auto;
     }
-    
-    th, td {
-        padding: 0.75rem 0.5rem;
-        font-size: 0.85rem;
+
+    /* Tab Buttons Stack */
+    .tabs-header {
+        gap: 0.8rem;
     }
+
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        /* Larger touch target */
+        font-size: 1.1rem;
+    }
+
+    /* Search Bar */
+    .search-container {
+        width: 100%;
+        margin-bottom: 2.5rem !important;
+    }
+}
+
+/* =========================================
+   FAQ Section Styles (Premium Look)
+   ========================================= */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+    border-color: var(--primary-color);
+}
+
+.faq-item summary {
+    padding: 1.5rem;
+    background: white;
+    /* Different from inventory pink */
+    font-size: 1.1rem;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 0.5px;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-item summary::after {
+    content: '+';
+    background: var(--light-bg);
+    color: var(--primary-color);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    /* Reset font for icon */
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.faq-item[open] summary {
+    border-bottom: 1px solid #f3f4f6;
+    color: var(--primary-color);
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(45deg);
+    background: var(--primary-color);
+    color: white;
+}
+
+.faq-item p {
+    padding: 1.5rem;
+    color: #4b5563;
+    line-height: 1.6;
+    animation: fadeIn 0.3s ease;
 }
