@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // 1. Mobile Menu Toggle (Restored for V2 Design)
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
-    if(mobileBtn && navLinks) {
+    if (mobileBtn && navLinks) {
         mobileBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            
+
             // Optional: Toggle icon between bars and times
             const icon = mobileBtn.querySelector('i');
-            if(icon.classList.contains('fa-bars')) {
+            if (icon.classList.contains('fa-bars')) {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-times');
             } else {
@@ -23,23 +23,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Smooth Scrolling for Navigation Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            
+
             // Close mobile menu if open
-            if(navLinks && navLinks.classList.contains('active')) {
+            if (navLinks && navLinks.classList.contains('active')) {
                 navLinks.classList.remove('active');
-                if(mobileBtn) {
-                     const icon = mobileBtn.querySelector('i');
-                     if(icon) {
-                         icon.classList.remove('fa-times');
-                         icon.classList.add('fa-bars');
-                     }
+                if (mobileBtn) {
+                    const icon = mobileBtn.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
                 }
             }
 
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#' || targetId === '') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 const headerOffset = 70; // Height of fixed header
@@ -66,9 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    });
-
 });
+
+
 
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
@@ -88,13 +88,13 @@ function filterInventory() {
     var input, filter, details, tr, td, i, j, txtValue, match;
     input = document.getElementById("inventorySearch");
     filter = input.value.toUpperCase();
-    
+
     var container = document.getElementById("retail"); // Default to retail for search
     // If not found, check other tabs? For now we assume user is on retail tab or wants to search retail layout
     // Actually, let's search in all tabs or just the active one?
     // The current complexity suggests we search within the visible container, 
     // but the extracted version put everything in retail categories.
-    
+
     var categories = container.getElementsByTagName("details");
 
     for (i = 0; i < categories.length; i++) {
@@ -112,29 +112,29 @@ function filterInventory() {
             if (td[0] || td[1]) {
                 var txt1 = td[0].textContent || td[0].innerText;
                 var txt2 = td[1] ? (td[1].textContent || td[1].innerText) : "";
-                
+
                 if (txt1.toUpperCase().indexOf(filter) > -1 || txt2.toUpperCase().indexOf(filter) > -1) {
                     match = true;
                     categoryHasMatch = true;
                 }
             }
-            
+
             if (match) {
                 tr[j].style.display = "";
             } else {
                 tr[j].style.display = "none";
             }
         }
-        
+
         // Logic to open/close categories based on matches
-        if(filter === "") {
-             categories[i].open = false; // Collapse all when search cleared
-             categories[i].style.display = "block";
+        if (filter === "") {
+            categories[i].open = false; // Collapse all when search cleared
+            categories[i].style.display = "block";
         } else if (categoryHasMatch) {
             categories[i].open = true; // Open category if match found
             categories[i].style.display = "block";
         } else {
-             categories[i].style.display = "none"; // Hide empty categories
+            categories[i].style.display = "none"; // Hide empty categories
         }
     }
 }
@@ -167,10 +167,10 @@ const createChatLi = (message, className) => {
 const handleOption = (optionType) => {
     // 1. User Message (Visual only)
     let userText = "";
-    if(optionType === 'location') userText = "Where is the shop?";
-    else if(optionType === 'hours') userText = "Opening Hours?";
-    else if(optionType === 'contact') userText = "Contact Number?";
-    else if(optionType === 'services') userText = "Repair Services?";
+    if (optionType === 'location') userText = "Where is the shop?";
+    else if (optionType === 'hours') userText = "Opening Hours?";
+    else if (optionType === 'contact') userText = "Contact Number?";
+    else if (optionType === 'services') userText = "Repair Services?";
 
     chatbox.appendChild(createChatLi(userText, "outgoing"));
     chatbox.scrollTo(0, chatbox.scrollHeight);
@@ -184,7 +184,7 @@ const handleOption = (optionType) => {
 }
 
 // Toggle Chat Window
-if(chatbotToggler) {
+if (chatbotToggler) {
     chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
     closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 }
