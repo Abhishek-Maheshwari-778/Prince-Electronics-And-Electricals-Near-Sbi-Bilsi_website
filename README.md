@@ -1,37 +1,54 @@
-# Prince Electronics & Electricals Website
+# Prince Electronics & Electricals Website ⚡
 
-Welcome to the official website project for **Prince Electronics & Electricals (Bilsi)**.
+A modern, mobile-responsive website built for **Prince Electronics**, an established electrical shop in Bilsi, India (popularly known as *"DC Pankhe Wale"*). 
 
-## Project Structure
-- `index.html`: The main website file containing all content.
-- `styles.css`: The "premium" and responsive design definitions.
-- `script.js`: Handles interactions like the mobile menu.
+This project digitizes the shop's inventory, making it easy for retail and wholesale customers to browse 100+ items, check repairing services, and find the shop location.
 
-## Features
-- **Hybrid V4 Design**: Combines beautiful product cards with a detailed 100+ item rate list.
-- **Tabbed Catalog**: switching between Retail, Wholesale, and Repairing lists.
-- **Bilingual Content**: Supports English and Hindi/Hinglish as requested.
-- **Mobile Responsive**: Looks great on all phones and desktops.
-- **SEO Optimized**: Includes tags for Bilsi and surrounding villages, plus Schema.org data.
-- **Contact Integrated**: One-click calling and Google Maps integration.
-
-## How to Edit
-1. **Text**: Open `index.html` in any text editor (Notepad, VS Code) to change phone numbers or text.
-2. **Colors**: Open `styles.css` and change the `--primary-color` variable at the top to change the theme color.
-
-## How to Host (Free)
-You can host this website for free on **GitHub Pages** or **Vercel**.
-
-### GitHub Pages Method
-1. Create a repository on GitHub (e.g., `prince-electronics`).
-2. Upload these 3 files (`index.html`, `styles.css`, `script.js`).
-3. Go to **Settings** > **Pages**.
-4. Select `main` branch and save.
-5. Your site will be live at `https://your-username.github.io/prince-electronics`.
-
-### Vercel/Netlify Method
-1. Drag and drop this folder onto Vercel or Netlify dashboard.
-2. It will instantly publish.
+**🔴 Live Demo:** [View Live Website](https://abhishek-maheshwari-778.github.io/Prince-Electronics-And-Electricals-Near-Sbi-Bilsi_website/)
 
 ---
-*Created for Prince Electronics - Bilsi*
+
+## 📱 Key Features
+
+*   **Mobile-First Design**: Fully optimized for smartphone users (80% of traffic). The interface transforms from tables to touch-friendly cards on mobile devices.
+*   **Smart Inventory Search**: Instant search bar allows users to find specific wires, switches, or fans from a catalog of 100+ items.
+*   **Categorized Catalog**: Items are organized into logical sections (House Wiring, Lighting, Cooling, etc.) with collapsible menus.
+*   **SEO Optimized**: Custom meta tags, Open Graph support for social sharing, and structured content to help locals find the shop on Google.
+*   **Fast & Lightweight**: Built with pure HTML/CSS/JS for instant load times (no heavy frameworks).
+
+## 🛠️ Technologies Used
+
+*   **Frontend**: HTML5, CSS3 (Modern Variables & Flexbox/Grid), JavaScript (DOM Manipulation for Search/Tabs).
+*   **Design**: Custom "Orange & Blue" brand theme, Responsive Media Queries.
+*   **Assets**: FontAwesome Icons, Google Fonts (Outfit & Teko).
+
+## 📸 Screenshots
+
+| Mobile View (Cards) | Desktop View (Catalog) |
+|:---:|:---:|
+| <img src="shop_photos/Screenshot 2026-01-17 221424.png" width="250" alt="Mobile View"> | <img src="shop_photos/Screenshot 2026-01-17 221703.png" width="400" alt="Desktop View"> |
+
+## 📂 Project Structure
+
+```bash
+├── index.html          # Main website structure
+├── styles.css     # Custom CSS for styling and responsiveness
+├── script.js           # Logic for Search Bar and Tab switching
+├── robots.txt          # SEO crawler instructions
+├── shop_photos/        # Real images of the shop
+└── ...                 # Generated assets for product categories
+```
+
+## 🚀 How to Run Locally
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/Abhishek-Maheshwari-778/Prince-Electronics-And-Electricals-Near-Sbi-Bilsi_website.git
+    ```
+2.  Open `index.html` in any web browser.
+
+## 👨‍💻 Author
+
+**Abhishek Maheshwari**  
+*Prince Electronics & Electricals*  
+Bilsi, Budaun, UP.
