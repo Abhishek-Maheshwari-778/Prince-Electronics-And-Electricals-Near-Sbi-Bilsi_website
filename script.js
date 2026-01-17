@@ -66,4 +66,125 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    });
+
 });
+
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab-btn");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+function filterInventory() {
+    var input, filter, details, tr, td, i, j, txtValue, match;
+    input = document.getElementById("inventorySearch");
+    filter = input.value.toUpperCase();
+    
+    var container = document.getElementById("retail"); // Default to retail for search
+    // If not found, check other tabs? For now we assume user is on retail tab or wants to search retail layout
+    // Actually, let's search in all tabs or just the active one?
+    // The current complexity suggests we search within the visible container, 
+    // but the extracted version put everything in retail categories.
+    
+    var categories = container.getElementsByTagName("details");
+
+    for (i = 0; i < categories.length; i++) {
+        var table = categories[i].querySelector("table");
+        tr = table.getElementsByTagName("tr");
+        var categoryHasMatch = false;
+
+        for (j = 0; j < tr.length; j++) {
+            // Skip header row if it exists inside tbody (unlikely based on my code but safe)
+            if (tr[j].getElementsByTagName("th").length > 0) continue;
+
+            td = tr[j].getElementsByTagName("td");
+            match = false;
+            // Check Item Name (col 0) and Details (col 1)
+            if (td[0] || td[1]) {
+                var txt1 = td[0].textContent || td[0].innerText;
+                var txt2 = td[1] ? (td[1].textContent || td[1].innerText) : "";
+                
+                if (txt1.toUpperCase().indexOf(filter) > -1 || txt2.toUpperCase().indexOf(filter) > -1) {
+                    match = true;
+                    categoryHasMatch = true;
+                }
+            }
+            
+            if (match) {
+                tr[j].style.display = "";
+            } else {
+                tr[j].style.display = "none";
+            }
+        }
+        
+        // Logic to open/close categories based on matches
+        if(filter === "") {
+             categories[i].open = false; // Collapse all when search cleared
+             categories[i].style.display = "block";
+        } else if (categoryHasMatch) {
+            categories[i].open = true; // Open category if match found
+            categories[i].style.display = "block";
+        } else {
+             categories[i].style.display = "none"; // Hide empty categories
+        }
+    }
+}
+
+// =========================================
+// Chatbot Logic
+// =========================================
+const chatbotToggler = document.querySelector(".chatbot-toggler");
+const closeBtn = document.querySelector(".close-btn");
+const chatbox = document.querySelector(".chatbox");
+
+// Predefined Bot Responses
+const botResponses = {
+    "location": "We are located at Moha No 4, Near SBI Bank, Sirasal Road, Bilsi, Budaun. \n\nClick here for [Google Maps Location]!",
+    "hours": "Our shop is open everyday from 9:00 AM to 8:00 PM.",
+    "contact": "You can call us directly: \n\n📞 +91 9412196628 \n📞 +91 9756196628 \n\nOwner: Mr. Pradeep Maheshwari",
+    "services": "We repair:\n- AC/DC Fans\n- Cooler Motors\n- Inverters\n- Stabilizers\n- House Wiring faults.",
+    "default": "Welcome to Prince Electronics! How can I help you today?"
+};
+
+const createChatLi = (message, className) => {
+    const chatLi = document.createElement("li");
+    chatLi.classList.add("chat", className);
+    let chatContent = className === "outgoing" ? `<p></p>` : `<span><i class="fas fa-robot"></i></span><p></p>`;
+    chatLi.innerHTML = chatContent;
+    chatLi.querySelector("p").innerText = message;
+    return chatLi;
+};
+
+const handleOption = (optionType) => {
+    // 1. User Message (Visual only)
+    let userText = "";
+    if(optionType === 'location') userText = "Where is the shop?";
+    else if(optionType === 'hours') userText = "Opening Hours?";
+    else if(optionType === 'contact') userText = "Contact Number?";
+    else if(optionType === 'services') userText = "Repair Services?";
+
+    chatbox.appendChild(createChatLi(userText, "outgoing"));
+    chatbox.scrollTo(0, chatbox.scrollHeight);
+
+    // 2. Bot Response
+    setTimeout(() => {
+        const botResponse = botResponses[optionType];
+        chatbox.appendChild(createChatLi(botResponse, "incoming"));
+        chatbox.scrollTo(0, chatbox.scrollHeight);
+    }, 600);
+}
+
+// Toggle Chat Window
+if(chatbotToggler) {
+    chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+    closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+}

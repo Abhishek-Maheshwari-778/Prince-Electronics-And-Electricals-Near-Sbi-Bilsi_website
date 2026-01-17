@@ -710,5 +710,31 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- Chatbot Widget -->
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined"><i class="fas fa-comment-dots"></i></span>
+        <span class="material-symbols-outlined"><i class="fas fa-times"></i></span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chat with Prince Bot</h2>
+            <span class="close-btn material-symbols-outlined"><i class="fas fa-times"></i></span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span><i class="fas fa-robot"></i></span>
+                <p>Hello! 👋<br>Welcome to Prince Electronics. How can we help you today?</p>
+            </li>
+            <li class="chat incoming">
+                <p>Select an option below:</p>
+            </li>
+        </ul>
+        <div class="chat-options" style="padding: 0 20px 20px 20px;">
+            <button class="chat-btn" onclick="handleOption('location')">Current Location</button>
+            <button class="chat-btn" onclick="handleOption('contact')">Call Owner</button>
+            <button class="chat-btn" onclick="handleOption('services')">Repair Services</button>
+            <button class="chat-btn" onclick="handleOption('hours')">Shop Timings</button>
+        </div>
+    </div>
 </body>
 </html>
