@@ -401,6 +401,39 @@ header {
     border: none;
 }
 
+/* Brands Grid */
+.brands-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.brand-item {
+    padding: 1rem 2rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    color: #4b5563;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: default;
+    background: #f9fafb;
+    min-width: 120px;
+    text-align: center;
+}
+
+.brand-item:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 /* Footer */
 footer {
     background: var(--dark-bg);
