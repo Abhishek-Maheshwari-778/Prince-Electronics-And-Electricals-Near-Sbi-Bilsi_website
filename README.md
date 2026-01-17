@@ -39,13 +39,7 @@ This project digitizes the shop's inventory, making it easy for retail and whole
 └── ...                 # Generated assets for product categories
 ```
 
-## 🚀 How to Run Locally
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/Abhishek-Maheshwari-778/Prince-Electronics-And-Electricals-Near-Sbi-Bilsi_website.git
-    ```
-2.  Open `index.html` in any web browser.
 
 ## 👨‍💻 Author
 
