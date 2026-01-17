@@ -161,11 +161,12 @@ const closeBtn = document.querySelector(".close-btn");
 const chatbox = document.querySelector(".chatbox");
 
 // Predefined Bot Responses
+// Predefined Bot Responses
 const botResponses = {
-    "location": "We are located at Moha No 4, Near SBI Bank, Sirasal Road, Bilsi, Budaun. \n\nClick here for [Google Maps Location]!",
-    "hours": "Our shop is open everyday from 9:00 AM to 8:00 PM.",
-    "contact": "You can call us directly: \n\n📞 +91 9412196628 \n📞 +91 9756196628 \n\nOwner: Mr. Pradeep Maheshwari",
-    "services": "We repair:\n- AC/DC Fans\n- Cooler Motors\n- Inverters\n- Stabilizers\n- House Wiring faults.",
+    "location": "We are located at: <br><strong>Moha No 4, Near SBI Bank, Sirasal Road, Bilsi</strong>.<br><br><a href='https://www.google.com/maps/search/?api=1&query=Prince+Electronics+Bilsi' target='_blank' style='color: yellow; text-decoration: underline;'>📍 View on Google Maps</a>",
+    "hours": "🕒 <strong>Shop Timings:</strong><br>Mon - Sun: 9:00 AM - 9:00 PM<br>(Open 7 Days a Week)",
+    "contact": "📞 <strong>Call Us:</strong><br><a href='tel:+919758081689' style='color: white; text-decoration: underline;'>+91 97580 81689</a><br><a href='tel:+919758976224' style='color: white; text-decoration: underline;'>+91 97589 76224</a><br><br><strong>Owner:</strong> Mr. Avinash Kumar",
+    "services": "🛠️ <strong>We Repair:</strong><br>• Speeding up Fans (Winding)<br>• Cooler Motor & Pump Reuse<br>• Inverter & Stabilizer PCB<br>• Press/Iron & Mixer Grinders",
     "default": "Welcome to Prince Electronics! How can I help you today?"
 };
 
@@ -174,7 +175,7 @@ const createChatLi = (message, className) => {
     chatLi.classList.add("chat", className);
     let chatContent = className === "outgoing" ? `<p></p>` : `<span><i class="fas fa-robot"></i></span><p></p>`;
     chatLi.innerHTML = chatContent;
-    chatLi.querySelector("p").innerText = message;
+    chatLi.querySelector("p").innerHTML = message; // Changed to innerHTML for links
     return chatLi;
 };
 
